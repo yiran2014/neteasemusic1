@@ -9,13 +9,14 @@ var xhr = new XMLHttpRequest()
 xhr.open('GET', '/neteasemusic1/cate2.json', true)
 xhr.send()
 xhr.onload=function(){
-console.log(xhr.responseText)
+// console.log(xhr.responseText)
   getData(xhr.responseText)
 }
 var p=document.querySelector('p')
 function getData(arr){
-  arr.forEach(function(item){
-    p.innerText(item)
+//   arr.forEach(function(item){
+//     p.innerText(item)
+  console.log(arr)
   })
 }
 </script>
