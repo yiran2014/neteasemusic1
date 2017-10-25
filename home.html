@@ -8,7 +8,7 @@ var xhr = new XMLHttpRequest()
 xhr.open('GET', '/neteasemusic1/cate2.json', true)
 xhr.send()
 xhr.onload=function(){
-console.log(JSON.parse(xhr.responseText))
+console.log(xhr.responseText)
 }
 </script>
 </body>
