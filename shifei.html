@@ -3,12 +3,20 @@
 <head>
 </head>
 <body>
+  <p></p>
 <script>
 var xhr = new XMLHttpRequest()
 xhr.open('GET', '/neteasemusic1/cate2.json', true)
 xhr.send()
 xhr.onload=function(){
 console.log(xhr.responseText)
+  getData(xhr.responseText)
+}
+var p=document.querySelector('p')
+function getDate(arr){
+  arr.forEach(function(item){
+    p.innerText(item)
+  })
 }
 </script>
 </body>
