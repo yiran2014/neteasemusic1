@@ -13,11 +13,16 @@ xhr.onload=function(){
   getData(xhr.responseText)
 }
 var p=document.querySelector('p')
-function getData(arr){
+function getData(obj){
+var arr=[]
+	for(var i in obj){
+		arr.push(i)
+	}
+	//return arr
 //   arr.forEach(function(item){
 //     p.innerText(item)
  // console.log(Array.isArray(arr))
-  console.log(arr)
+console.log(arr)
  // })
 }
 </script>
