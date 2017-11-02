@@ -3,7 +3,9 @@
 <head>
 </head>
 <body>
-  <p></p>
+  	<div class="name">姓名：<span></span></div>
+	<div class="age">年龄：<span></span></div>
+	<div class="job">工作：<span></span></div>
 <script>
 var xhr = new XMLHttpRequest()
 xhr.open('GET', '/neteasemusic1/cate3.json', true)
@@ -41,7 +43,13 @@ var arr=[]
   
 console.log(arr)
 	arr.forEach(function(item,index){
-	console.log(item)
+	//console.log(item)
+	var na=document.querySelector('.name>span')
+	var ag=document.querySelector('.age>span')
+	var jo=document.querySelector('.job>span')
+	na.innerText(item.name)
+	ag.innerText(item.age)
+	jo.innerText(item.job)
 })
  // })
 }
