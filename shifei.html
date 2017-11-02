@@ -10,7 +10,7 @@ xhr.open('GET', '/neteasemusic1/cate3.json', true)
 xhr.send()
 xhr.onload=function(){
 // console.log(xhr.responseText)
-  getData(xhr.responseText)
+  //getData(xhr.responseText)
 	getData({
 "title":"history",
   "age":17,
@@ -20,7 +20,8 @@ xhr.onload=function(){
 var p=document.querySelector('p')
 function getData(obj){
 	console.log(111)
-	console.log(obj)
+	console.log(JSON.stringify(obj))
+	
 var arr=[]
 	for(var i in obj){
 		arr.push(obj[i])
