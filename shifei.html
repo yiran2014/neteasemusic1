@@ -10,7 +10,7 @@ xhr.open('GET', '/neteasemusic1/cate3.json', true)
 xhr.send()
 xhr.onload=function(){
 // console.log(xhr.responseText)
-  getData(xhr.responseText)
+  getData(JSON.parse(xhr.responseText))
 // 	getData({
 // "title":"history",
 //   "age":17,
