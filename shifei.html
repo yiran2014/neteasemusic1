@@ -22,7 +22,8 @@ xhr.onload=function(){
 var p=document.querySelector('p')
 function getData(obj){
 	console.log(obj)
-	console.log(JSON.parse(obj))
+	console.log(Array.isArray(obj))
+	//console.log(JSON.parse(obj))
 	//obj=JSON.parse(obj)
 var arr=[]
 	for(var i in obj){
@@ -31,7 +32,7 @@ var arr=[]
 	//return arr
 //   arr.forEach(function(item){
 //     p.innerText(item)
- // console.log(Array.isArray(arr))
+  
 console.log(arr)
  // })
 }
