@@ -22,8 +22,9 @@ xhr.onload=function(){
 var p=document.querySelector('p')
 function getData(obj){
 	console.log(obj)
-	console.log(Array.isArray(obj))
-	console.log(JSON.stringify(obj))
+	console.log(typeof obj)
+	//console.log(Array.isArray(obj))
+	//console.log(JSON.stringify(obj))
 	//obj=JSON.parse(obj)
 var arr=[]
 	for(var i in obj){
