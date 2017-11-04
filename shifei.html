@@ -10,9 +10,9 @@
 var xhr = new XMLHttpRequest()
 xhr.open('GET', '/neteasemusic1/cate3.json', true)
 xhr.send()
-	console.log(readyState)
+	console.log(xhr.readyState)
 xhr.onload=function(){
-	console.log(readyState)
+	console.log(xhr.readyState)
 // console.log(xhr.responseText)
   getData(xhr.responseText)
 // 	getData({
