@@ -35,23 +35,27 @@ function getData(obj){
 	//console.log(Array.isArray(obj))
 	//console.log(JSON.stringify(obj))
 	//obj=JSON.parse(obj)
-var arr=[]
-	for(var i in obj){
-		arr.push(obj[i])
-	}
+// var arr=[]
+// 	for(var i in obj){
+// 		arr.push(obj[i])
+// 	}
 	//return arr
 //   arr.forEach(function(item){
 //     p.innerText(item)
   
-console.log(arr)
+// console.log(arr)
 	//arr.forEach(function(item,index){
 	//console.log(item)
 	var na=document.querySelector('.name>span')
 	var ag=document.querySelector('.age>span')
 	var jo=document.querySelector('.job>span')
-	na.innerText=arr[0]
-	ag.innerText=arr[1]
-	jo.innerText=arr[2]
+// 	na.innerText=arr[0]
+// 	ag.innerText=arr[1]
+// 	jo.innerText=arr[2]
+	console.log('变更')
+	na.innerText=obj.name
+	ag.innerText=obj.age
+	jo.innerText=obj.job
 //})
  // })
 }
